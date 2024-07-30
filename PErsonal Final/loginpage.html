@@ -1,0 +1,47 @@
+<!-- Add a new section for the login page -->
+<section id="login-page">
+    <div class="container">
+      <h1>Login</h1>
+      <form id="login-form">
+        <input type="text" name="username" id="username" placeholder="Username" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <input type="submit" value="Login" id="login-btn">
+        <p id="login-msg"></p>
+      </form>
+    </div>
+  </section>
+  
+  <!-- Add a link to the login page in the navigation menu -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Page</a>
+    <a href="#">Blog</a>
+    <a href="#">Portofolio</a>
+    <a href="#">Components</a>
+    <a href="#">Contact</a>
+    <a href="#login-page">Login</a> <!-- Add this link -->
+    <i class="fa-solid fa-magnifying-glass" id="search"></i>
+  </nav>
+  
+  <!-- Add JavaScript code to handle the login form submission -->
+  <script>
+    const loginForm = document.getElementById('login-form');
+    const loginBtn = document.getElementById('login-btn');
+    const loginMsg = document.getElementById('login-msg');
+  
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+  
+      // Add your login logic here
+      // For example, you can send a request to your server to verify the credentials
+      // and then redirect the user to the dashboard or display an error message
+      if (username === 'admin' && password === 'password') {
+        loginMsg.textContent = 'Login successful!';
+        // Redirect to dashboard or display a success message
+      } else {
+        loginMsg.textContent = 'Invalid username or password';
+      }
+    });
+  </script>
