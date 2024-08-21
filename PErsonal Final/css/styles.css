@@ -18,9 +18,9 @@ html {
     --textaccent3: #484848;
     --txtaccent4: #000;
     --txtaccent5: #E5E5E5;
-    --haccent: #730fffa6;
+    --haccent: #f76009e5;
     --haccent_withOpacity: rgba(75, 15, 255, 0.6);
-    --haccent2: #730fffa6;
+    --haccent2: #fffb0fe5;
     --bgaccent: #1A1C27;
     --bgaccent_withOpacity: rgba(26, 28, 39,0.96);
 }
@@ -31,7 +31,7 @@ html {
 }
 /* SECTION ZERO = LANDING VIEW */
 #sec-0{
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../Images/banner.jpg) no-repeat top center/cover;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(../Images/banner.jpg) no-repeat top center/cover;
 }
 #sec-0 header.top {
     background-color: var(--haccent);
